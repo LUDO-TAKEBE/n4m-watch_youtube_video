@@ -1,0 +1,14 @@
+{
+  "name": "watch-youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "watch-youtube",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ytdl-core": "^0.29.7"
+  }
+}
