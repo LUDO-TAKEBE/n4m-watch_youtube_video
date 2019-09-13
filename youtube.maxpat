@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1083.0, 129.0, 866.0, 867.0 ],
+		"rect" : [ 608.0, 111.0, 866.0, 867.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 306.0, 83.0, 64.0, 22.0 ],
+					"text" : "script start"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 30.0,
 					"id" : "obj-11",
@@ -110,7 +122,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 28.0, 293.0, 575.0, 35.0 ],
-									"presentation_linecount" : 4,
 									"text" : ";\rmax launchbrowser https://docs.cycling74.com/max8?contentp=Node%20For%20Max&contentg=vignettes"
 								}
 
@@ -123,7 +134,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 28.0, 259.0, 240.0, 29.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Max n4m Documentation",
 									"textcolor" : [ 0.137254901960784, 0.549019607843137, 0.996078431372549, 1.0 ]
 								}
@@ -279,7 +289,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 365.0, 26.0, 116.0, 28.0 ],
+					"patching_rect" : [ 378.0, 80.0, 116.0, 28.0 ],
 					"text" : "2.click here"
 				}
 
@@ -321,10 +331,10 @@
 					"patching_rect" : [ 111.5, 251.0, 149.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "slider",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "slider",
-							"parameter_type" : 0,
-							"parameter_longname" : "slider"
+							"parameter_type" : 0
 						}
 
 					}
@@ -376,8 +386,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -481,6 +489,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -539,7 +554,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "watch-youtube.js",
-				"bootpath" : "~/Desktop/youtube",
+				"bootpath" : "~/Downloads/n4m-watch_youtube_video-master",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
