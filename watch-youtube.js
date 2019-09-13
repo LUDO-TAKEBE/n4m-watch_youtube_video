@@ -10,7 +10,7 @@ maxApi.addHandler('open', (url) => {
         })
         .catch(() => {
             maxApi.post('Error fetching url: ${url}');
-        })
+        });
 
 });
 
