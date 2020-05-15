@@ -1,7 +1,7 @@
 {
   "name": "watch-youtube",
   "version": "1.0.0",
-  "description": "",
+  "description": "watch youtube-video in jitter with \"node for max\". Please look at this website. https://qiita.com/LUDO/items/13b5288596c5c2e1bbfa",
   "main": "watch-youtube",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ytdl-core": "^0.29.7"
+    "ytdl-core": "^2.1.2"
   }
 }
